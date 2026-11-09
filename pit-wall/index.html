@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Pit-Wall GP SP</title>
 </head>
+
 <body>
     <header class="cabecalho">
         <label class="logo" for="logo">PIT WALL</label>
@@ -18,7 +20,7 @@
         <a href="#"><button>Comprar Ingressos</button></a>
     </header>
     <section class="hero">
-        <label class="texto-medio">AUTÓDROMO DE INTERLAGOS  • NOVEMBRO DE 2026</label>
+        <label class="texto-medio">AUTÓDROMO DE INTERLAGOS • NOVEMBRO DE 2026</label>
         <h1 class="titulo">GP DE SÃO PAULO</h1>
         <p>71 voltas, 22 carros no grid e a torcida brasileira empurrando o Bortoleto na reta.</p>
         <a href="#ingressos"><button>GARANTIR MEU LUGAR</button></a>
@@ -32,11 +34,106 @@
         <section id="#pilotos">
             <label>01</label>
             <h2>Grid de Pilotos</h2>
+
+            <div class="card-pilotos">
+                <p class="numero-piloto">16</p>
+                <h2>Charles <strong>Leclerc</strong></h2>
+                <p class="nome-time">Ferrari</p>
+            </div>
+
+            <div class="card-pilotos">
+                <p class="numero-piloto">81</p>
+                <h2>Oscar <strong>Piastri</strong></h2>
+                <p class="nome-time">McLaren</p>
+            </div>
+
+            <div class="card-pilotos">
+                <p class="numero-piloto">63</p>
+                <h2>George <strong>Russel</strong></h2>
+                <p class="nome-time">Mercedes</p>
+            </div>
+
+            <div class="card-pilotos">
+                <p class="numero-piloto">5</p>
+                <h2>Gabriel <strong>Bortoleto</strong></h2>
+                <p class="nome-time">Audi</p>
+            </div>
         </section>
 
-        <section id="#classificação"></section>
+        <section id="#classificação">
+            <form action="">
+                <label for="nome-piloto">Buscar Piloto:</label>
+                <input for="nome-piloto" type="text">
 
-        <section id="#ingressos"></section>
+                <label for="equipe">Equipe</label>
+                <input type="text">
+
+                <button>Filtrar</button>
+            </form>
+            <div class="table-container">
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Pos.</th>
+                            <th>Piloto</th>
+                            <th>Equipe</th>
+                            <th>vitórias</th>
+                            <th>Diferença</th>
+                            <th>Pontos</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Oscar Piastri</td>
+                            <td>McLaren</td>
+                            <td>6</td>
+                            <td>LÍDER</td>
+                            <td>366</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Charles Leclerc</td>
+                            <td>Ferrari</td>
+                            <td>5</td>
+                            <td>-18</td>
+                            <td>348</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>George Russel</td>
+                            <td>Mercedes</td>
+                            <td>4</td>
+                            <td>-41</td>
+                            <td>325</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Gabriel Bortoleto</td>
+                            <td>Audi</td>
+                            <td>5</td>
+                            <td>-298</td>
+                            <td>68</td>
+                        </tr>
+                    </tbody>
+                </table>
+        </section>
+
+        <section id="#ingressos">
+            <h2>Ingressos</h2>
+            <p>Escolha o setor e venha ver a decisão do título de perto.</p>
+            <p class="aviso">Últimos 120 lugares no Setor da Reta!</p>
+            <ul>
+                <li><p>Arquibancada A</p> <p class="text-ver"><strong>R$ 480</strong></p></li>
+                <li><p>Setor da Reta</p> <p class="text-ver"><strong>R$ 890</strong></p></li>
+                <li><p>Box VIP</p> <p class="text-ver"><strong>R$ 2.400</strong></p></li>
+            </ul>
+            
+            <form action=""></form>
+        </section>
     </main>
 </body>
+
 </html>
